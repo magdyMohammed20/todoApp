@@ -13,7 +13,14 @@ class App extends Component{
   }
   render(){
     return <div>
-      <ShowItems/>
+      <table>
+        <tr border='1'>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Action</td>
+        </tr>
+        <ShowItems items={this.state.items}/>
+      </table>
       <AddItems/>
     </div>
   }
