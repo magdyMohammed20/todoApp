@@ -49,7 +49,7 @@ class App extends Component{
     return <div>
       <table>
         <thead>
-          <tr border='1'>
+          <tr >
             <td>Name</td>
             <td>Age</td>
             <td>Action</td>

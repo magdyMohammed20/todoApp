@@ -3,8 +3,62 @@ body{
   margin: 0;
   box-sizing: border-box;
   background-color: #293a9a;
+  font-family: verdana;
 }
 
+
+table{
+  text-align: center;
+  margin: 100px auto;
+}
+table thead td{
+  color: #FFF;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+table thead td,
+table td,
+input{
+  padding: 15px;
+  border:none
+}
+
+input:focus,
+button:focus{
+  outline: none;
+}
+
+input[type='number']{
+  border-left: 3px solid #DDD;
+}
+tfoot td{
+  padding: 0;
+}
+table tr,
+table button{
+  background-color: #FFF
+}
+
+table thead tr{
+  background-color: blueviolet
+}
+
+table button,
+input[type='submit']{
+  border: none;
+  cursor: pointer;
+}
+
+.delete{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.Empty{
+  background-color: red;
+}
 .NotFound{
-  color: red
+  background-color: #e91e63;
+  color: #FFF
 }

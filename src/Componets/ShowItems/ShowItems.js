@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import './ShowItems.css'
 
 const ShowItems = props =>{
 
@@ -9,7 +8,7 @@ const ShowItems = props =>{
       <tr>
         <td>{item.name}</td>
         <td>{item.age}</td>
-        <td><button onClick={()=>deleteItem(item.id)}>&times;</button></td>
+        <td><button onClick={()=>deleteItem(item.id)} className='delete'>&times;</button></td>
       </tr>
     </Fragment>
   })
