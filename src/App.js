@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
 import './App.css';
+import ShowItems from './Componets/ShowItems/ShowItems'
+import AddItems from './Componets/AddItems/AddItems'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends Component{
+  state={
+    items:[
+      {id: 1 , name: 'magdy' , age : 20},
+      {id: 2 , name: 'mohammed' , age : 22},
+      {id: 3 , name: 'ali' , age : 23}
+    ]
+  }
+  render(){
+    return <div>
+      <ShowItems/>
+      <AddItems/>
     </div>
-  );
+  }
 }
 
 export default App;
