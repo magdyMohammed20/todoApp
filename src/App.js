@@ -11,6 +11,28 @@ class App extends Component{
       {id: 3 , name: 'ali' , age : 23}
     ]
   }
+
+  deleteItem = id =>{
+
+    // First Way Of Removing Element From Array
+    /*
+    const items = this.state.items;
+    const indexOfDeleted = items.findIndex(item=> item.id == id);
+    items.splice(indexOfDeleted , 1)
+    this.setState({
+      items
+    })
+    */
+
+    // Second Way Of Removing Element From Array
+    const items = this.state.items;
+    const filter = items.filter(item => item.id != id)
+    this.setState({
+      items: filter
+    })
+
+
+  }
   render(){
     return <div>
       <table>
@@ -19,7 +41,15 @@ class App extends Component{
           <td>Age</td>
           <td>Action</td>
         </tr>
-        <ShowItems items={this.state.items}/>
+        {
+          this.state.items.length > 0 ? (
+
+            <ShowItems items={this.state.items} deleteItem={this.deleteItem}/>
+          ):
+          <tr className='NotFound'>
+            <td colSpan='3'>There Is No Items To Show</td>
+          </tr>
+        }
       </table>
       <AddItems/>
     </div>

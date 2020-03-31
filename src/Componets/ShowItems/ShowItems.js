@@ -3,13 +3,13 @@ import './ShowItems.css'
 
 const ShowItems = props =>{
 
-  const items = props.items;
+  const {items , deleteItem} = props;
   const listItems = items.map(item => {
     return <Fragment key={item.id}>
       <tr>
         <td>{item.name}</td>
         <td>{item.age}</td>
-        <td>&times;</td>
+        <td><button onClick={()=>deleteItem(item.id)}>&times;</button></td>
       </tr>
     </Fragment>
   })
