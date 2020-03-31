@@ -26,32 +26,53 @@ class App extends Component{
 
     // Second Way Of Removing Element From Array
     const items = this.state.items;
-    const filter = items.filter(item => item.id != id)
+    const filter = items.filter(item => item.id !== id)
     this.setState({
       items: filter
     })
 
 
   }
+
+
+  addItem = (item) =>{
+    item.id = Math.random() // Generate Id For Every New Item
+    const items = this.state.items;
+    items.push(item);
+
+    this.setState({
+      items
+    })
+  }
+
   render(){
     return <div>
       <table>
-        <tr border='1'>
-          <td>Name</td>
-          <td>Age</td>
-          <td>Action</td>
-        </tr>
-        {
-          this.state.items.length > 0 ? (
-
-            <ShowItems items={this.state.items} deleteItem={this.deleteItem}/>
-          ):
-          <tr className='NotFound'>
-            <td colSpan='3'>There Is No Items To Show</td>
+        <thead>
+          <tr border='1'>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Action</td>
           </tr>
-        }
+        </thead>
+        <tbody>
+          {
+            this.state.items.length > 0 ? (
+
+              <ShowItems items={this.state.items} deleteItem={this.deleteItem}/>
+            ):
+            <tr className='NotFound'>
+              <td colSpan='3'>There Is No Items To Show</td>
+            </tr>
+          }
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colSpan='3'><AddItems addItem={this.addItem}/></td>
+          </tr>
+        </tfoot>
       </table>
-      <AddItems/>
+      
     </div>
   }
 }
