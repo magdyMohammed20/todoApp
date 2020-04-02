@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/magdyMohammed20/todoApp/static/css/main.6fbd768a.chunk.css",
+    "main.js": "/magdyMohammed20/todoApp/static/js/main.8b64bff1.chunk.js",
+    "main.js.map": "/magdyMohammed20/todoApp/static/js/main.8b64bff1.chunk.js.map",
+    "runtime-main.js": "/magdyMohammed20/todoApp/static/js/runtime-main.4c64c572.js",
+    "runtime-main.js.map": "/magdyMohammed20/todoApp/static/js/runtime-main.4c64c572.js.map",
+    "static/js/2.c5504464.chunk.js": "/magdyMohammed20/todoApp/static/js/2.c5504464.chunk.js",
+    "static/js/2.c5504464.chunk.js.map": "/magdyMohammed20/todoApp/static/js/2.c5504464.chunk.js.map",
+    "index.html": "/magdyMohammed20/todoApp/index.html",
+    "precache-manifest.739e6849a2711d35f859b849df06b177.js": "/magdyMohammed20/todoApp/precache-manifest.739e6849a2711d35f859b849df06b177.js",
+    "service-worker.js": "/magdyMohammed20/todoApp/service-worker.js",
+    "static/css/main.6fbd768a.chunk.css.map": "/magdyMohammed20/todoApp/static/css/main.6fbd768a.chunk.css.map",
+    "static/js/2.c5504464.chunk.js.LICENSE.txt": "/magdyMohammed20/todoApp/static/js/2.c5504464.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c64c572.js",
+    "static/js/2.c5504464.chunk.js",
+    "static/css/main.6fbd768a.chunk.css",
+    "static/js/main.8b64bff1.chunk.js"
+  ]
+}
